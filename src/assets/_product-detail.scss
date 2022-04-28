@@ -1,0 +1,182 @@
+.product-detail-wrapper {
+    width: 85%;
+    max-width: 85%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    .gallery {
+        width: 8%;
+        max-width: 8%;
+        position: relative;
+        .back-to-list {
+            position: absolute;
+            display: inline-block;
+            width: max-content;
+            top: -35px;
+            cursor: pointer;
+        }
+        .img-wrapper {
+            position: relative;
+            padding-bottom: 100%;
+            overflow: hidden;
+            max-width: 100%;
+            margin-bottom: 10px;
+            cursor: pointer;
+            .item-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            &:hover {
+                box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+            }
+        }
+    }
+    .main-img {
+        width: 40%;
+        max-width: 40%;
+        padding-left: 20px;
+        padding-right: 20px;
+        .main-img-wrapper {
+            position: relative;
+            padding-bottom: 100%;
+            overflow: hidden;
+            max-width: 100%;
+            .main-image {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .shopping-box {
+        width: 35%;
+        max-width: 35%;
+        .brand {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 27px;
+            color: #1d1f22;
+            display: block;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 16px;
+            max-width: 100%;
+        }
+        .name {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 27px;
+            color: #1d1f22;
+            display: block;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 40px;
+            max-width: 100%;
+        }
+        .attributes {
+            max-width: 100%;
+            .attr {
+                margin: 0;
+                padding: 0;
+                margin-bottom: 24px;
+                display: block;
+                .atrr-name {
+                    font-family: "Roboto Condensed";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 18px;
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: 10px;
+                    color: #1d1f22;
+                }
+                .items {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .attr-item {
+                        cursor: pointer;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid #1d1f22;
+                        width: 63px;
+                        height: 45px;
+                        background-color: #ffffff;
+                        color: #292929;
+                        margin-left: 6px;
+                        margin-right: 6px;
+                        &:hover {
+                            background-color: rgb(124, 124, 124);
+                            color: white;
+                        }
+                        &.selected {
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .price-title {
+            font-family: "Roboto Condensed";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 18px;
+            display: block;
+            margin: 0;
+            padding: 0;
+            color: #1d1f22;
+            padding-bottom: 10px;
+            max-width: 100%;
+        }
+        .price {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 18px;
+            display: block;
+            margin: 0;
+            padding: 0;
+            color: #1d1f22;
+            padding-bottom: 20px;
+            max-width: 100%;
+        }
+        button {
+            cursor: pointer;
+            display: block;
+            height: 52px;
+            width: 100%;
+            max-width: 100%;
+            color: white;
+            background-color: #5ece7b;
+            margin-bottom: 40px;
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            outline: none;
+            border: none;
+        }
+        .description {
+            max-width: 100%;
+        }
+    }
+}

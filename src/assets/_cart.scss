@@ -1,0 +1,251 @@
+.cart {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+    .title {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        color: #1d1f22;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        min-height: 68px;
+        text-transform: capitalize;
+        margin-bottom: 50px;
+    }
+    .back-to-list{
+        position: absolute;
+        top: 35px;
+        left: 100px;
+    }
+    .orders-list {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            border-top: 1px solid #e5e5e5;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            .text {
+                .brand {
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 30px;
+                    color: #1d1f22;
+                }
+                .name {
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 30px;
+                    color: #1d1f22;
+                }
+                .amount {
+                    max-width: 100%;
+                    text-emphasis: wrap;
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: #1d1f22;
+                    margin-top: 8px;
+                }
+                .attributes {
+                    max-width: 100%;
+                    .attr {
+                        width: 100%;
+                        .atrr-name {
+                            width: 100%;
+                            padding-top: 8px;
+                            padding-bottom: 8px;
+                            font-weight: 700;
+                            font-size: 18px;
+                        }
+                        .items {
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            .attr-item {
+                                cursor: pointer;
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                border: 1px solid #1d1f22;
+                                width: 65px;
+                                height: 45px;
+                                background-color: #ffffff;
+                                color: #292929;
+                                margin: 6px;
+                                font-size: 10px;
+                                &:hover {
+                                    background-color: rgb(124, 124, 124);
+                                    color: white;
+                                }
+                                &.selected {
+                                    background-color: black;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .inner-flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: stretch;
+                .actions-count {
+                    display: flex;
+                    align-items: stretch;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    .inc {
+                        display: flex;
+                        align-items: flex-start;
+                        height: 33%;
+                        cursor: pointer;
+                        .sign {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 25px;
+                            height: 25px;
+                            border: 1px solid black;
+                            font-size: 13px;
+                            font-weight: 700;
+                        }
+                    }
+                    .count {
+                        display: flex;
+                        align-items: center;
+                        height: 34%;
+                        font-weight: 500;
+                        font-size: 24px;
+                    }
+                    .dec {
+                        display: flex;
+                        align-items: flex-end;
+                        height: 33%;
+                        cursor: pointer;
+                        .sign {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 25px;
+                            height: 25px;
+                            border: 1px solid black;
+                            font-size: 13px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .img {
+                    max-width: 120px;
+                    max-height: 190px;
+                    min-width: 120px;
+                    min-height: 190px;
+                    position: relative;
+                    .item-image {
+                        width: 100%;
+                        max-width: 100%;
+                        min-width: 100%;
+                        height: 100%;
+                        max-width: 100%;
+                        min-height: 100%;
+                        margin: auto;
+                    }
+                    .slider {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 50px;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        i {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            border-top: 1px solid #e5e5e5;
+            .tax {
+                font-family: "Raleway";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                color: #1d1f22;
+                padding: 0;
+                margin: 0;
+                margin-top: 32px;
+                span {
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: #1d1f22;
+                }
+            }
+            .qty {
+                font-family: "Raleway";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                color: #1d1f22;
+                padding: 0;
+                margin: 0;
+                margin-top: 8px;
+                span {
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: #1d1f22;
+                }
+            }
+            .total {
+                font-family: "Raleway";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                color: #1d1f22;
+                padding: 0;
+                margin: 0;
+                margin-top: 24px;
+                span {
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: #1d1f22;
+                }
+            }
+            .btn-wrapper {
+                margin-top: 20px;
+                .order {
+                    width: 279px;
+                    height: 43px;
+                    background: #5ece7b;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
