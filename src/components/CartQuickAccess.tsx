@@ -12,8 +12,8 @@ interface CartQuickAccessComponentProps {
         product: Product;
         count: number;
         attr: Array<{
-            attrId: string | number;
-            attritemId: string | number;
+            attrId: string | number ;
+            attritemId: string | number ;
         }>
     }>;
     activeCurrency: Currency;
